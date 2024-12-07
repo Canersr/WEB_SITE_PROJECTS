@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezi Rehberi Uygulaması</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Türkiye Gezi Rehberi</h1>
+    </header>
+
+    <input type="text" id="search" placeholder="Şehir Ara..." onkeyup="sehirara()">
+
+
+    <div class="sehirler">
+        
+           <!-- İstanbul -->
+        <div class="city-card">
+            <img src="resimler/istanbul.jpg" alt="İstanbul">
+            <h2>İstanbul</h2>
+            <p>İstanbul, Türkiye'nin en büyük şehridir. Tarihi ve kültürel zenginlikleriyle ünlüdür.</p>
+            <ul>
+                <li>Aya Sofya</li>
+                <li>Topkapı Sarayı</li>
+                <li>Sultanahmet Camii</li>
+                <li>Yerebatan Sarnıcı</li>
+                <li>Kız Kulesi</li>
+            </ul>
+           
+        </div>
+           <!-- Ankara -->
+        <div class="city-card">
+            <img src="resimler/ankara.webp" alt="Ankara">
+            <h2>Ankara</h2>
+            <p>Ankara, Türkiye'nin başkentidir. Modern yapıları ve müzeleri ile bilinir.</p>
+            <ul>
+                <li>Anıtkabir</li>
+                <li>Anadolu Medeniyetleri Müzesi</li>
+                <li>Kocatepe Camii</li>
+                <li>Ankara Kalesi</li>
+                <li>Cumhuriyet Müzesi</li>
+            </ul>
+         
+        </div>
+               <!-- Antalya -->
+        <div class="city-card">
+            <img src="resimler/antalya.jpg" alt="Antalya">
+            <h2>Antalya</h2>
+            <p>Antalya, Türkiye'nin turizm başkenti olarak bilinir. Göz alıcı plajları ve antik kentleriyle ünlüdür.</p>
+            <ul>
+                <li>Konyaaltı Plajı</li>
+                <li>Antalya Düden Şelalesi</li>
+                <li>Hadrian Kapısı</li>
+                <li>Antalya Arkeoloji Müzesi</li>
+                <li>Aspendos Antik Tiyatrosu</li>
+            </ul>
+          
+        </div>
+        <!-- İzmir -->
+        <div class="city-card">
+            <img src="resimler/izmir.jpg" alt="İzmir">
+            <h2>İzmir</h2>
+            <p>İzmir, Türkiye'nin batısında yer alan, Ege'nin incisi olarak bilinen bir şehirdir. Tarihi ve doğal güzellikleriyle ünlüdür.</p>
+            <ul>
+                <li>İzmir Saat Kulesi</li>
+                <li>Kemeraltı Çarşısı</li>
+                <li>Efes Antik Kenti</li>
+                <li>Atatürk Müzesi</li>
+                <li>Arkas Sanat Merkezi</li>
+            </ul>
+           
+        </div>
+       
+
+          <!-- Mersin -->
+          <div class="city-card">
+            <img src="resimler/mersin.jpg" alt="Mersin">
+            <h2>Mersin</h2>
+            <p>Mersin, Akdeniz kıyısında yer alır ve tarihi kalıntıları, plajları ve mutfağıyla ünlüdür.</p>
+            <ul>
+                <li>Adana Taşköprü</li>
+                <li>Mersin Marina</li>
+                <li>Kızkalesi</li>
+                <li>Mersin Müzesi</li>
+                <li>Astım Mağarası</li>
+            </ul>
+         
+        </div>
+
+        <!-- Hatay -->
+        <div class="city-card">
+            <img src="resimler/hatay.jpg" alt="Hatay">
+            <h2>Hatay</h2>
+            <p>Hatay, tarihi zenginlikleri ve mutfağıyla ünlüdür. Antakya, Roma kalıntılarıyla dikkat çeker.</p>
+            <ul>
+                <li>Antakya Mozaik Müzesi</li>
+                <li>Saint Pierre Kilisesi</li>
+                <li>Hatay Arkeoloji Müzesi</li>
+                <li>Harbiye Şelaleleri</li>
+                <li>Hıdırbey Kültür Merkezi</li>
+            </ul>
+       
+        </div>
+
+        <!-- Eskişehir -->
+        <div class="city-card">
+            <img src="resimler/eskisehir.jpg" alt="Eskişehir">
+            <h2>Eskişehir</h2>
+            <p>Eskişehir, öğrenci şehri olarak bilinir. Porsuk Çayı ve modern caddeleriyle ünlüdür.</p>
+            <ul>
+                <li>Porsuk Çayı</li>
+                <li>Odunpazarı Evleri</li>
+                <li>Eskişehir Hayvanat Bahçesi</li>
+                <li>Atatürk Caddesi</li>
+                <li>Eskişehir Modern Sanat Müzesi</li>
+            </ul>
+          
+        </div>
+
+        <!-- Adana -->
+        <div class="city-card">
+            <img src="resimler/adana.jpg" alt="adana">
+            <h2>Adana</h2>
+            <p>Adana, mutfağı ve kebaplarıyla ünlüdür. Seyhan Nehri üzerinde güzel manzaralar sunar.</p>
+            <ul>
+                <li>Adana Taşköprü</li>
+                <li>Sabancı Merkez Camii</li>
+                <li>Adana Arkeoloji Müzesi</li>
+                <li>Adana Kültür Merkezi</li>
+                <li>Seyhan Barajı</li>
+            </ul>
+     
+        </div>
+
+        <!-- Denizli -->
+        <div class="city-card">
+            <img src="resimler/denizli.jpg" alt="Denizli">
+            <h2>Denizli</h2>
+            <p>Denizli, Pamukkale travertenleriyle ünlüdür. Aynı zamanda tekstil merkezi olarak bilinir.</p>
+            <ul>
+                <li>Pamukkale Travertenleri</li>
+                <li>Hierapolis Antik Kenti</li>
+                <li>Kaklık Mağarası</li>
+                <li>Denizli Atatürk Caddesi</li>
+                <li>Denizli Ticaret Odası</li>
+            </ul>
+        
+        </div>
+
+        <!-- Muğla -->
+        <div class="city-card">
+            <img src="resimler/mugla.jpg" alt="Muğla">
+            <h2>Muğla</h2>
+            <p>Muğla, Ege'nin güzel sahil beldeleri ve doğal güzellikleriyle ünlüdür. Bodrum ve Fethiye gibi turistik yerleri bulunur.</p>
+            <ul>
+                <li>Bodrum Kalesi</li>
+                <li>Fethiye Ölüdeniz</li>
+                <li>Göcek</li>
+                <li>Dalaman Plajı</li>
+                <li>Muğla Müzesi</li>
+            </ul>
+         
+        </div>
+
+        <!-- Çanakkale -->
+        <div class="city-card">
+            <img src="resimler/canakkale.jpg" alt="Çanakkale">
+            <h2>Çanakkale</h2>
+            <p>Çanakkale, tarihî önemi ve doğal güzellikleriyle ünlüdür. Çanakkale Boğazı, özellikle savaş tarihiyle tanınır.</p>
+            <ul>
+                <li>Anzak Koyu</li>
+                <li>Troya Antik Kenti</li>
+                <li>Çanakkale Şehitler Anıtı</li>
+                <li>Çimenlik Kalesi</li>
+                <li>Bozcaada</li>
+            </ul>
+      
+        </div>
+
+        <!-- Aydın -->
+        <div class="city-card">
+            <img src="resimler/aydin.jpg" alt="Aydın">
+            <h2>Aydın</h2>
+            <p>Aydın, doğal güzellikleri ve antik kalıntılarıyla ünlüdür. Efes Antik Kenti, bu bölgedeki önemli bir turistik yerdir.</p>
+            <ul>
+                <li>Efes Antik Kenti</li>
+                <li>Çine Çayı</li>
+                <li>Aydın Müzesi</li>
+                <li>Didim Apollo Tapınağı</li>
+                <li>Kuştur Plajı</li>
+            </ul>
+         
+        </div>
+
+    </div>
+
+    <script>
+function sehirara() {
+    const searchInput = document.getElementById('search').value.toLowerCase();
+    const cities = document.querySelectorAll('.city-card');
+    
+    cities.forEach(city => {
+        const cityName = city.querySelector('h2').textContent.toLowerCase(); 
+        if (cityName.includes(searchInput)) {
+            city.style.display = 'block'; 
+        } else {
+            city.style.display = 'none'; 
+        }
+    });
+}
+    </script>
+</body>
+</html>
